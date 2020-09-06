@@ -4,7 +4,7 @@
       <div class="col-sm-12">
          <h3 >Question {{index+1}} of {{questionsArray?.length}} </h3>
          <p>{{questionsArray[index]?.question}}</p>
-         <div  (click)="correctanswer(answerArray[0])">
+         <div  (click)="correctanswer(answerArray[0],0)">
              <input  type="text" readonly value="{{answerArray[0]}}" class="answer">
              <div class="alert alert-success" role="alert" *ngIf="selectedright">
                You are Selected Correct Answer
