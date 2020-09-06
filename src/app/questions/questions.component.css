@@ -1,0 +1,83 @@
+.flex-container {
+    text-align: center;
+    float: center;
+}
+
+.card{
+    float: center;
+    text-align: center;
+    display: auto;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+  }
+
+
+  h1,
+h2,
+h3,
+h4 {
+    margin: .1rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-left: 20px;
+    text-align: center;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    box-sizing: inherit;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 1.2em;
+}
+
+h4 {
+    font-size: 1rem;
+    font-style: italic;
+    padding-left: 60px;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.answer{
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    width: 100%;
+    
+
+  }
+  .answer:hover{
+    cursor: pointer;
+  }
+
+  .selected {
+    background-color: #0066cc !important;
+    color: white !important;
+}

@@ -1,0 +1,52 @@
+<h2 style="align-content: center">Software Engineering Quiz</h2>
+<div class="center">
+   <div class="row" style="float: center;">
+      <div class="col-sm-12">
+         <h3 >Question {{index+1}} of {{questionsArray?.length}} </h3>
+         <p>{{questionsArray[index]?.question}}</p>
+         <div  (click)="correctanswer(answerArray[0])">
+             <input  type="text" readonly value="{{answerArray[0]}}" class="answer">
+           <div *ngIf="selectedright">
+               You are Selected Correct Answer
+           </div>
+         </div>
+         <div  >
+            <input  type="text" readonly value="{{answerArray[1]}}" class="answer"
+            (click)="correctanswer(answerArray[1],1)">
+            <span class="text-danger"></span>
+            <div *ngIf="selectedwrong && wrong==1" >
+                You are Selected wrong Answer
+            </div>
+        </div>
+        <div  >
+            <input  type="text" readonly value="{{answerArray[2]}}" class="answer"
+            (click)="correctanswer(answerArray[2],2)">
+            <div *ngIf="selectedwrong &&wrong==2" >
+                You are Selected wrong Answer
+            </div>
+        </div>
+        <div  >
+            <input  type="text" readonly value="{{answerArray[3]}}" class="answer"
+            (click)="correctanswer(answerArray[3],3)">
+            <div *ngIf="selectedwrong && wrong==3">
+                You are Selected wrong Answer
+            </div>
+        </div>
+         
+         <br>
+         <button type="button"   style="margin:5px;"
+            (click)="nextItem()"
+            class="btn btn-outline-primary">
+         <strong>Next</strong>
+         <span class="badge"></span>
+         </button>
+
+         <button *ngIf="questionsArray.length==index+1" type="button"   style="margin:5px;"
+         [routerLink]="['/result']" (click)="submit()"
+         class="btn btn-outline-primary">
+      <strong>Submit</strong>
+      <span class="badge"></span>
+      </button>
+      </div>
+   </div>
+</div>

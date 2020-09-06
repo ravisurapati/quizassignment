@@ -1,0 +1,39 @@
+<h2 style="align-content: center">Software Engineering Quiz</h2>
+<div class="center">
+   <div class="row" style="float: center;">
+      <div class="col-sm-12">
+         <div class="card" >
+            <p>Take this awesome quiz that will help improve your understanding of Software Engineering.
+               See if you can beat the clock! The timed questionnaire with automatic scoring provides you 
+               a final score along with a summary of your answers. 
+               Good luck and have fun with this quiz. 
+            </p>
+            <div  *ngIf="difficultscreen">
+               <div  class="card-header" style="text-align: left;">
+                  <b>Please select the difficulty of the test</b> 
+               </div>
+               <button type="button"  style="margin:5px;"
+                  (click)="selectdifficulty('easy')"
+                  class="btn btn-outline-primary">
+               <strong>EASY</strong>
+               <span class="badge"></span></button>
+               <br>
+               <button type="button" style="margin:5px;" (click)="selectdifficulty('medium')"
+                  class="btn btn-outline-secondary"><strong>MEDIUM</strong>
+               </button>
+               <br>
+               <button type="button"  style="margin:5px;"(click)="selectdifficulty('difficult')"
+                  class="btn btn-outline-danger"><strong>DIFFICULT</strong>
+               <span class="badge"></span></button>
+               <br>
+            </div>
+            <div *ngIf="startscreen">
+               <button type="button" [routerLink]="['/questions']" (click)="buttonroutestart()"
+               class="btn btn-success pull-right"><strong>START</strong>
+               <span class="badge"></span></button>
+               <br>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

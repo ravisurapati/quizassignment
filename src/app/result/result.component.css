@@ -1,0 +1,53 @@
+.flex-container {
+    text-align: center;
+    float: center;
+}
+
+.card{
+    float: center;
+    text-align: center;
+    display: auto;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+  }
+
+
+  h1,
+h2,
+h3,
+h4 {
+    margin: .1rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding-left: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2rem;
+    padding-left: 40px;
+}
+
+h4 {
+    font-size: 1rem;
+    font-style: italic;
+    padding-left: 60px;
+}
+
+#btnSearch,
+#btnClear{
+    display: inline-block;
+    vertical-align: top;
+}
+
