@@ -6,7 +6,7 @@
          <p>{{questionsArray[index]?.question}}</p>
          <div  (click)="correctanswer(answerArray[0])">
              <input  type="text" readonly value="{{answerArray[0]}}" class="answer">
-           <div *ngIf="selectedright">
+             <div class="alert alert-success" role="alert" *ngIf="selectedright">
                You are Selected Correct Answer
            </div>
          </div>
@@ -14,21 +14,21 @@
             <input  type="text" readonly value="{{answerArray[1]}}" class="answer"
             (click)="correctanswer(answerArray[1],1)">
             <span class="text-danger"></span>
-            <div *ngIf="selectedwrong && wrong==1" >
+            <div class="alert alert-danger" role="alert" *ngIf="selectedwrong && wrong==1" >
                 You are Selected wrong Answer
             </div>
         </div>
         <div  >
             <input  type="text" readonly value="{{answerArray[2]}}" class="answer"
             (click)="correctanswer(answerArray[2],2)">
-            <div *ngIf="selectedwrong &&wrong==2" >
+            <div class="alert alert-danger" role="alert" *ngIf="selectedwrong &&wrong==2" >
                 You are Selected wrong Answer
             </div>
         </div>
         <div  >
             <input  type="text" readonly value="{{answerArray[3]}}" class="answer"
             (click)="correctanswer(answerArray[3],3)">
-            <div *ngIf="selectedwrong && wrong==3">
+            <div class="alert alert-danger" role="alert" *ngIf="selectedwrong && wrong==3">
                 You are Selected wrong Answer
             </div>
         </div>
